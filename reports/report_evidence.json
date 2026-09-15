@@ -1,0 +1,5402 @@
+{
+  "method": "CLEAR temporal one-to-one matching; IoU >= 0.5; MOT frames start at 1",
+  "inputs": {
+    "gold": {
+      "path": "data/gold/gold/clip01/gt.txt",
+      "sha256": "94a2bd34aa00348b49cd3ec48e85dbfeaf00504b97349e343363d40e4d1f9d79",
+      "rows": 573,
+      "frames": 190,
+      "tracks": 8,
+      "track_spans": {
+        "1": [
+          1,
+          190
+        ],
+        "2": [
+          1,
+          11
+        ],
+        "3": [
+          1,
+          43
+        ],
+        "4": [
+          54,
+          148
+        ],
+        "5": [
+          79,
+          138
+        ],
+        "6": [
+          101,
+          156
+        ],
+        "7": [
+          106,
+          190
+        ],
+        "8": [
+          136,
+          168
+        ]
+      }
+    },
+    "pre": {
+      "path": "evidence/pre-gold/clip_01/gt.txt",
+      "sha256": "8473600f9d19e92dab3624f4c4a3f675b64c6da65beeef18a37ee7f226841831",
+      "rows": 576,
+      "frames": 190,
+      "tracks": 8,
+      "track_spans": {
+        "1": [
+          1,
+          190
+        ],
+        "2": [
+          1,
+          11
+        ],
+        "3": [
+          1,
+          45
+        ],
+        "4": [
+          52,
+          144
+        ],
+        "5": [
+          78,
+          139
+        ],
+        "6": [
+          104,
+          190
+        ],
+        "7": [
+          106,
+          157
+        ],
+        "8": [
+          135,
+          170
+        ]
+      }
+    },
+    "me": {
+      "path": "annotations/clip_01/gt.txt",
+      "sha256": "942084ca302b311eebf76159888f89218dfd164faf6a34c3f36f0ac4d73c9858",
+      "rows": 576,
+      "frames": 190,
+      "tracks": 8,
+      "track_spans": {
+        "1": [
+          1,
+          190
+        ],
+        "2": [
+          1,
+          11
+        ],
+        "3": [
+          1,
+          45
+        ],
+        "4": [
+          52,
+          144
+        ],
+        "5": [
+          78,
+          139
+        ],
+        "6": [
+          104,
+          190
+        ],
+        "7": [
+          106,
+          157
+        ],
+        "8": [
+          135,
+          170
+        ]
+      }
+    },
+    "warmup": {
+      "path": "annotations/clip_02/gt.txt",
+      "sha256": "d749c79aad52079c0b18ba49f64ccbc4e9b8b3715baf96b6a21399fc123a82a9",
+      "rows": 239,
+      "frames": 60,
+      "tracks": 7,
+      "track_spans": {
+        "1": [
+          1,
+          10
+        ],
+        "2": [
+          1,
+          2
+        ],
+        "3": [
+          1,
+          60
+        ],
+        "4": [
+          1,
+          60
+        ],
+        "5": [
+          10,
+          59
+        ],
+        "6": [
+          14,
+          38
+        ],
+        "7": [
+          29,
+          60
+        ]
+      }
+    },
+    "bt": {
+      "path": "outputs/model_bytetrack_clip_01.txt",
+      "sha256": "17dbd6b1c13b554557b87d0d18122ab6a6a79f06baba1a7fd4684021313b77dd",
+      "rows": 607,
+      "frames": 190,
+      "tracks": 16,
+      "track_spans": {
+        "1": [
+          1,
+          10
+        ],
+        "2": [
+          1,
+          43
+        ],
+        "3": [
+          1,
+          190
+        ],
+        "10": [
+          17,
+          116
+        ],
+        "14": [
+          56,
+          57
+        ],
+        "15": [
+          59,
+          148
+        ],
+        "23": [
+          85,
+          85
+        ],
+        "32": [
+          94,
+          138
+        ],
+        "41": [
+          106,
+          121
+        ],
+        "47": [
+          110,
+          155
+        ],
+        "52": [
+          112,
+          190
+        ],
+        "54": [
+          136,
+          167
+        ],
+        "64": [
+          163,
+          163
+        ],
+        "69": [
+          167,
+          178
+        ],
+        "70": [
+          169,
+          169
+        ],
+        "71": [
+          169,
+          169
+        ]
+      }
+    },
+    "reid": {
+      "path": "outputs/model_reid_clip_01.txt",
+      "sha256": "1552aa74dfd8ecc402c9479b34e148200bd55f1c0675a9195df5e91284be75d5",
+      "rows": 638,
+      "frames": 190,
+      "tracks": 16,
+      "track_spans": {
+        "1": [
+          1,
+          11
+        ],
+        "2": [
+          1,
+          44
+        ],
+        "3": [
+          1,
+          190
+        ],
+        "7": [
+          16,
+          116
+        ],
+        "9": [
+          55,
+          149
+        ],
+        "17": [
+          85,
+          85
+        ],
+        "18": [
+          87,
+          139
+        ],
+        "24": [
+          104,
+          104
+        ],
+        "26": [
+          105,
+          105
+        ],
+        "27": [
+          106,
+          121
+        ],
+        "28": [
+          107,
+          107
+        ],
+        "29": [
+          108,
+          190
+        ],
+        "31": [
+          110,
+          156
+        ],
+        "34": [
+          136,
+          170
+        ],
+        "38": [
+          158,
+          178
+        ],
+        "39": [
+          163,
+          169
+        ]
+      }
+    }
+  },
+  "verification": {
+    "pre_gold": "all metrics and diagnostics match recomputation",
+    "vs_gold": "all metrics and diagnostics match recomputation",
+    "bytetrack_vs_gold": "all metrics and diagnostics match recomputation",
+    "reid_vs_gold": "all metrics and diagnostics match recomputation",
+    "reid_vs_me": "all metrics and diagnostics match recomputation"
+  },
+  "changed_rows": [
+    {
+      "frame": 79,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        762.91,
+        242.83,
+        38.25999999999999,
+        46.069999999999965
+      ],
+      "after_bbox_xywh": [
+        764.69,
+        246.91,
+        43.02,
+        40.04
+      ]
+    },
+    {
+      "frame": 80,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        754.8,
+        242.83,
+        46.370000000000005,
+        46.069999999999965
+      ],
+      "after_bbox_xywh": [
+        755.69,
+        247.16,
+        47.93,
+        40.29
+      ]
+    },
+    {
+      "frame": 83,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        721.6,
+        252.31,
+        46.370000000000005,
+        46.079999999999984
+      ],
+      "after_bbox_xywh": [
+        723.23,
+        254.57,
+        46.39,
+        40.3
+      ]
+    },
+    {
+      "frame": 90,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        643.34,
+        252.3,
+        68.36000000000001,
+        51.50999999999999
+      ],
+      "after_bbox_xywh": [
+        645.35,
+        255.78,
+        64.66,
+        44.68
+      ]
+    },
+    {
+      "frame": 91,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        634.53,
+        252.98,
+        68.36000000000001,
+        51.51000000000002
+      ],
+      "after_bbox_xywh": [
+        635.85,
+        256.77,
+        64.79,
+        44.04
+      ]
+    },
+    {
+      "frame": 92,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        624.03,
+        254.67,
+        68.36000000000001,
+        51.51000000000002
+      ],
+      "after_bbox_xywh": [
+        624.92,
+        258.08,
+        66.07,
+        44.04
+      ]
+    },
+    {
+      "frame": 93,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        603.37,
+        255.69,
+        68.36000000000001,
+        51.50999999999999
+      ],
+      "after_bbox_xywh": [
+        606.87,
+        258.92,
+        67.35,
+        44.04
+      ]
+    },
+    {
+      "frame": 94,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        591.85,
+        255.69,
+        68.36000000000001,
+        51.50999999999999
+      ],
+      "after_bbox_xywh": [
+        595.1,
+        258.85,
+        68.25,
+        44.17
+      ]
+    },
+    {
+      "frame": 97,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        560.0,
+        255.7,
+        98.20000000000005,
+        52.50999999999999
+      ],
+      "after_bbox_xywh": [
+        561.54,
+        258.61,
+        91.18,
+        45.76
+      ]
+    },
+    {
+      "frame": 98,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        546.45,
+        257.73,
+        98.19999999999993,
+        52.51999999999998
+      ],
+      "after_bbox_xywh": [
+        548.47,
+        260.28,
+        92.21,
+        46.15
+      ]
+    },
+    {
+      "frame": 106,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        432.65,
+        262.65,
+        98.19000000000005,
+        52.51000000000005
+      ],
+      "after_bbox_xywh": [
+        436.29,
+        266.41,
+        95.59,
+        45.7
+      ]
+    },
+    {
+      "frame": 107,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        418.19,
+        261.0,
+        120.91000000000003,
+        55.20999999999998
+      ],
+      "after_bbox_xywh": [
+        421.95,
+        265.13,
+        112.26,
+        48.1
+      ]
+    },
+    {
+      "frame": 108,
+      "annotation_id": 5,
+      "before_bbox_xywh": [
+        405.99,
+        263.03,
+        120.90999999999997,
+        55.210000000000036
+      ],
+      "after_bbox_xywh": [
+        409.18,
+        266.43,
+        113.03,
+        48.61
+      ]
+    }
+  ],
+  "frame_evidence": [
+    {
+      "frame": 55,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.64559,
+        "best_id": 1,
+        "best_iou": 0.64559
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.64559,
+        "best_id": 1,
+        "best_iou": 0.64559
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.974717,
+        "best_id": 3,
+        "best_iou": 0.974717
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.969218,
+        "best_id": 3,
+        "best_iou": 0.969218
+      }
+    },
+    {
+      "frame": 55,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.70415,
+        "best_id": 4,
+        "best_iou": 0.70415
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.70415,
+        "best_id": 4,
+        "best_iou": 0.70415
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.615129,
+        "best_id": 9,
+        "best_iou": 0.615129
+      }
+    },
+    {
+      "frame": 56,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.645729,
+        "best_id": 1,
+        "best_iou": 0.645729
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.645729,
+        "best_id": 1,
+        "best_iou": 0.645729
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.967895,
+        "best_id": 3,
+        "best_iou": 0.967895
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.958894,
+        "best_id": 3,
+        "best_iou": 0.958894
+      }
+    },
+    {
+      "frame": 56,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.725583,
+        "best_id": 4,
+        "best_iou": 0.725583
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.725583,
+        "best_id": 4,
+        "best_iou": 0.725583
+      },
+      "bt": {
+        "matched_id": 14,
+        "matched_iou": 0.605955,
+        "best_id": 14,
+        "best_iou": 0.605955
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.661577,
+        "best_id": 9,
+        "best_iou": 0.661577
+      }
+    },
+    {
+      "frame": 57,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.645868,
+        "best_id": 1,
+        "best_iou": 0.645868
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.645868,
+        "best_id": 1,
+        "best_iou": 0.645868
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.944109,
+        "best_id": 3,
+        "best_iou": 0.944109
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.952776,
+        "best_id": 3,
+        "best_iou": 0.952776
+      }
+    },
+    {
+      "frame": 57,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.860041,
+        "best_id": 4,
+        "best_iou": 0.860041
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.860041,
+        "best_id": 4,
+        "best_iou": 0.860041
+      },
+      "bt": {
+        "matched_id": 14,
+        "matched_iou": 0.57642,
+        "best_id": 14,
+        "best_iou": 0.57642
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.729777,
+        "best_id": 9,
+        "best_iou": 0.729777
+      }
+    },
+    {
+      "frame": 58,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.646007,
+        "best_id": 1,
+        "best_iou": 0.646007
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.646007,
+        "best_id": 1,
+        "best_iou": 0.646007
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.936786,
+        "best_id": 3,
+        "best_iou": 0.936786
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.938925,
+        "best_id": 3,
+        "best_iou": 0.938925
+      }
+    },
+    {
+      "frame": 58,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.896988,
+        "best_id": 4,
+        "best_iou": 0.896988
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.896988,
+        "best_id": 4,
+        "best_iou": 0.896988
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.818212,
+        "best_id": 9,
+        "best_iou": 0.818212
+      }
+    },
+    {
+      "frame": 59,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.646146,
+        "best_id": 1,
+        "best_iou": 0.646146
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.646146,
+        "best_id": 1,
+        "best_iou": 0.646146
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.932486,
+        "best_id": 3,
+        "best_iou": 0.932486
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.939926,
+        "best_id": 3,
+        "best_iou": 0.939926
+      }
+    },
+    {
+      "frame": 59,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.894488,
+        "best_id": 4,
+        "best_iou": 0.894488
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.894488,
+        "best_id": 4,
+        "best_iou": 0.894488
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.894001,
+        "best_id": 15,
+        "best_iou": 0.894001
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.885619,
+        "best_id": 9,
+        "best_iou": 0.885619
+      }
+    },
+    {
+      "frame": 60,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.64651,
+        "best_id": 1,
+        "best_iou": 0.64651
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.64651,
+        "best_id": 1,
+        "best_iou": 0.64651
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.94066,
+        "best_id": 3,
+        "best_iou": 0.94066
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.942173,
+        "best_id": 3,
+        "best_iou": 0.942173
+      }
+    },
+    {
+      "frame": 60,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.8148,
+        "best_id": 4,
+        "best_iou": 0.8148
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.8148,
+        "best_id": 4,
+        "best_iou": 0.8148
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.840778,
+        "best_id": 15,
+        "best_iou": 0.840778
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.905716,
+        "best_id": 9,
+        "best_iou": 0.905716
+      }
+    },
+    {
+      "frame": 78,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.648994,
+        "best_id": 1,
+        "best_iou": 0.648994
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.648994,
+        "best_id": 1,
+        "best_iou": 0.648994
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.814394,
+        "best_id": 3,
+        "best_iou": 0.814394
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.815553,
+        "best_id": 3,
+        "best_iou": 0.815553
+      }
+    },
+    {
+      "frame": 78,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.84448,
+        "best_id": 4,
+        "best_iou": 0.84448
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.84448,
+        "best_id": 4,
+        "best_iou": 0.84448
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.664288,
+        "best_id": 15,
+        "best_iou": 0.664288
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.886731,
+        "best_id": 9,
+        "best_iou": 0.886731
+      }
+    },
+    {
+      "frame": 79,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.649133,
+        "best_id": 1,
+        "best_iou": 0.649133
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.649133,
+        "best_id": 1,
+        "best_iou": 0.649133
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.816066,
+        "best_id": 3,
+        "best_iou": 0.816066
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.817307,
+        "best_id": 3,
+        "best_iou": 0.817307
+      }
+    },
+    {
+      "frame": 79,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.811377,
+        "best_id": 4,
+        "best_iou": 0.811377
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.811377,
+        "best_id": 4,
+        "best_iou": 0.811377
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.670796,
+        "best_id": 15,
+        "best_iou": 0.670796
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.877791,
+        "best_id": 9,
+        "best_iou": 0.877791
+      }
+    },
+    {
+      "frame": 79,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.360319
+      },
+      "me": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.47615
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.024417
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.05554
+      }
+    },
+    {
+      "frame": 80,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.649272,
+        "best_id": 1,
+        "best_iou": 0.649272
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.649272,
+        "best_id": 1,
+        "best_iou": 0.649272
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.823143,
+        "best_id": 3,
+        "best_iou": 0.823143
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.82329,
+        "best_id": 3,
+        "best_iou": 0.82329
+      }
+    },
+    {
+      "frame": 80,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.853158,
+        "best_id": 4,
+        "best_iou": 0.853158
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.853158,
+        "best_id": 4,
+        "best_iou": 0.853158
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.738973,
+        "best_id": 15,
+        "best_iou": 0.738973
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.79263,
+        "best_id": 9,
+        "best_iou": 0.79263
+      }
+    },
+    {
+      "frame": 80,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.494241
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.589998,
+        "best_id": 5,
+        "best_iou": 0.589998
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.013068
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.047202
+      }
+    },
+    {
+      "frame": 81,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.649411,
+        "best_id": 1,
+        "best_iou": 0.649411
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.649411,
+        "best_id": 1,
+        "best_iou": 0.649411
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.83322,
+        "best_id": 3,
+        "best_iou": 0.83322
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.833377,
+        "best_id": 3,
+        "best_iou": 0.833377
+      }
+    },
+    {
+      "frame": 81,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.788713,
+        "best_id": 4,
+        "best_iou": 0.788713
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.788713,
+        "best_id": 4,
+        "best_iou": 0.788713
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.779412,
+        "best_id": 15,
+        "best_iou": 0.779412
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.793414,
+        "best_id": 9,
+        "best_iou": 0.793414
+      }
+    },
+    {
+      "frame": 81,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.565915,
+        "best_id": 5,
+        "best_iou": 0.565915
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.565915,
+        "best_id": 5,
+        "best_iou": 0.565915
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.007318
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.040817
+      }
+    },
+    {
+      "frame": 82,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.649776,
+        "best_id": 1,
+        "best_iou": 0.649776
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.649776,
+        "best_id": 1,
+        "best_iou": 0.649776
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.844944,
+        "best_id": 3,
+        "best_iou": 0.844944
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.845044,
+        "best_id": 3,
+        "best_iou": 0.845044
+      }
+    },
+    {
+      "frame": 82,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.83378,
+        "best_id": 4,
+        "best_iou": 0.83378
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.83378,
+        "best_id": 4,
+        "best_iou": 0.83378
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.776026,
+        "best_id": 15,
+        "best_iou": 0.776026
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.836227,
+        "best_id": 9,
+        "best_iou": 0.836227
+      }
+    },
+    {
+      "frame": 82,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.535348,
+        "best_id": 5,
+        "best_iou": 0.535348
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.535348,
+        "best_id": 5,
+        "best_iou": 0.535348
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.004854
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.033963
+      }
+    },
+    {
+      "frame": 83,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.649915,
+        "best_id": 1,
+        "best_iou": 0.649915
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.649915,
+        "best_id": 1,
+        "best_iou": 0.649915
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.843537,
+        "best_id": 3,
+        "best_iou": 0.843537
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.843718,
+        "best_id": 3,
+        "best_iou": 0.843718
+      }
+    },
+    {
+      "frame": 83,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.869799,
+        "best_id": 4,
+        "best_iou": 0.869799
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.869799,
+        "best_id": 4,
+        "best_iou": 0.869799
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.767568,
+        "best_id": 15,
+        "best_iou": 0.767568
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.859362,
+        "best_id": 9,
+        "best_iou": 0.859362
+      }
+    },
+    {
+      "frame": 83,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.480348
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.578595,
+        "best_id": 5,
+        "best_iou": 0.578595
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.002554
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.029346
+      }
+    },
+    {
+      "frame": 84,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650054,
+        "best_id": 1,
+        "best_iou": 0.650054
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650054,
+        "best_id": 1,
+        "best_iou": 0.650054
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.851162,
+        "best_id": 3,
+        "best_iou": 0.851162
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.842855,
+        "best_id": 3,
+        "best_iou": 0.842855
+      }
+    },
+    {
+      "frame": 84,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.866439,
+        "best_id": 4,
+        "best_iou": 0.866439
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.866439,
+        "best_id": 4,
+        "best_iou": 0.866439
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.777887,
+        "best_id": 15,
+        "best_iou": 0.777887
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.855443,
+        "best_id": 9,
+        "best_iou": 0.855443
+      }
+    },
+    {
+      "frame": 84,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.511098,
+        "best_id": 5,
+        "best_iou": 0.511098
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.511098,
+        "best_id": 5,
+        "best_iou": 0.511098
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.002433
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.026555
+      }
+    },
+    {
+      "frame": 85,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650036,
+        "best_id": 1,
+        "best_iou": 0.650036
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650036,
+        "best_id": 1,
+        "best_iou": 0.650036
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.856514,
+        "best_id": 3,
+        "best_iou": 0.856514
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.855663,
+        "best_id": 3,
+        "best_iou": 0.855663
+      }
+    },
+    {
+      "frame": 85,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.88215,
+        "best_id": 4,
+        "best_iou": 0.88215
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.88215,
+        "best_id": 4,
+        "best_iou": 0.88215
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.818204,
+        "best_id": 15,
+        "best_iou": 0.818204
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.855709,
+        "best_id": 9,
+        "best_iou": 0.855709
+      }
+    },
+    {
+      "frame": 85,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.563974,
+        "best_id": 5,
+        "best_iou": 0.563974
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.563974,
+        "best_id": 5,
+        "best_iou": 0.563974
+      },
+      "bt": {
+        "matched_id": 23,
+        "matched_iou": 0.683757,
+        "best_id": 23,
+        "best_iou": 0.683757
+      },
+      "reid": {
+        "matched_id": 17,
+        "matched_iou": 0.738427,
+        "best_id": 17,
+        "best_iou": 0.738427
+      }
+    },
+    {
+      "frame": 86,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650175,
+        "best_id": 1,
+        "best_iou": 0.650175
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650175,
+        "best_id": 1,
+        "best_iou": 0.650175
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.864045,
+        "best_id": 3,
+        "best_iou": 0.864045
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.860266,
+        "best_id": 3,
+        "best_iou": 0.860266
+      }
+    },
+    {
+      "frame": 86,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.797107,
+        "best_id": 4,
+        "best_iou": 0.797107
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.797107,
+        "best_id": 4,
+        "best_iou": 0.797107
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.841999,
+        "best_id": 15,
+        "best_iou": 0.841999
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.837704,
+        "best_id": 9,
+        "best_iou": 0.837704
+      }
+    },
+    {
+      "frame": 86,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.664903,
+        "best_id": 5,
+        "best_iou": 0.664903
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.664903,
+        "best_id": 5,
+        "best_iou": 0.664903
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.000728
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.023805
+      }
+    },
+    {
+      "frame": 87,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650314,
+        "best_id": 1,
+        "best_iou": 0.650314
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650314,
+        "best_id": 1,
+        "best_iou": 0.650314
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.872535,
+        "best_id": 3,
+        "best_iou": 0.872535
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.866335,
+        "best_id": 3,
+        "best_iou": 0.866335
+      }
+    },
+    {
+      "frame": 87,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.784518,
+        "best_id": 4,
+        "best_iou": 0.784518
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.784518,
+        "best_id": 4,
+        "best_iou": 0.784518
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.890535,
+        "best_id": 15,
+        "best_iou": 0.890535
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.866703,
+        "best_id": 9,
+        "best_iou": 0.866703
+      }
+    },
+    {
+      "frame": 87,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.642456,
+        "best_id": 5,
+        "best_iou": 0.642456
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.642456,
+        "best_id": 5,
+        "best_iou": 0.642456
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.005035
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.633652,
+        "best_id": 18,
+        "best_iou": 0.633652
+      }
+    },
+    {
+      "frame": 88,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650453,
+        "best_id": 1,
+        "best_iou": 0.650453
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650453,
+        "best_id": 1,
+        "best_iou": 0.650453
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.880372,
+        "best_id": 3,
+        "best_iou": 0.880372
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.866689,
+        "best_id": 3,
+        "best_iou": 0.866689
+      }
+    },
+    {
+      "frame": 88,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.819771,
+        "best_id": 4,
+        "best_iou": 0.819771
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.819771,
+        "best_id": 4,
+        "best_iou": 0.819771
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.906068,
+        "best_id": 15,
+        "best_iou": 0.906068
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.868439,
+        "best_id": 9,
+        "best_iou": 0.868439
+      }
+    },
+    {
+      "frame": 88,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.535695,
+        "best_id": 5,
+        "best_iou": 0.535695
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.535695,
+        "best_id": 5,
+        "best_iou": 0.535695
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.009762
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.669743,
+        "best_id": 18,
+        "best_iou": 0.669743
+      }
+    },
+    {
+      "frame": 89,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650592,
+        "best_id": 1,
+        "best_iou": 0.650592
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650592,
+        "best_id": 1,
+        "best_iou": 0.650592
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.881601,
+        "best_id": 3,
+        "best_iou": 0.881601
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.863033,
+        "best_id": 3,
+        "best_iou": 0.863033
+      }
+    },
+    {
+      "frame": 89,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.862531,
+        "best_id": 4,
+        "best_iou": 0.862531
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.862531,
+        "best_id": 4,
+        "best_iou": 0.862531
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.901254,
+        "best_id": 15,
+        "best_iou": 0.901254
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.867415,
+        "best_id": 9,
+        "best_iou": 0.867415
+      }
+    },
+    {
+      "frame": 89,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.515819,
+        "best_id": 5,
+        "best_iou": 0.515819
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.515819,
+        "best_id": 5,
+        "best_iou": 0.515819
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.013359
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.702685,
+        "best_id": 18,
+        "best_iou": 0.702685
+      }
+    },
+    {
+      "frame": 90,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650957,
+        "best_id": 1,
+        "best_iou": 0.650957
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650957,
+        "best_id": 1,
+        "best_iou": 0.650957
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.884476,
+        "best_id": 3,
+        "best_iou": 0.884476
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.865148,
+        "best_id": 3,
+        "best_iou": 0.865148
+      }
+    },
+    {
+      "frame": 90,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.888826,
+        "best_id": 4,
+        "best_iou": 0.888826
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.888826,
+        "best_id": 4,
+        "best_iou": 0.888826
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.895269,
+        "best_id": 15,
+        "best_iou": 0.895269
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.872787,
+        "best_id": 9,
+        "best_iou": 0.872787
+      }
+    },
+    {
+      "frame": 90,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.457395
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.557489,
+        "best_id": 5,
+        "best_iou": 0.557489
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.012418
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.708665,
+        "best_id": 18,
+        "best_iou": 0.708665
+      }
+    },
+    {
+      "frame": 91,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.651096,
+        "best_id": 1,
+        "best_iou": 0.651096
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.651096,
+        "best_id": 1,
+        "best_iou": 0.651096
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.881141,
+        "best_id": 3,
+        "best_iou": 0.881141
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.861749,
+        "best_id": 3,
+        "best_iou": 0.861749
+      }
+    },
+    {
+      "frame": 91,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.864814,
+        "best_id": 4,
+        "best_iou": 0.864814
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.864814,
+        "best_id": 4,
+        "best_iou": 0.864814
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.893055,
+        "best_id": 15,
+        "best_iou": 0.893055
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.8885,
+        "best_id": 9,
+        "best_iou": 0.8885
+      }
+    },
+    {
+      "frame": 91,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.426585
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.526434,
+        "best_id": 5,
+        "best_iou": 0.526434
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.012214
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.023798
+      }
+    },
+    {
+      "frame": 92,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.651078,
+        "best_id": 1,
+        "best_iou": 0.651078
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.651078,
+        "best_id": 1,
+        "best_iou": 0.651078
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.890801,
+        "best_id": 3,
+        "best_iou": 0.890801
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.875502,
+        "best_id": 3,
+        "best_iou": 0.875502
+      }
+    },
+    {
+      "frame": 92,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.852793,
+        "best_id": 4,
+        "best_iou": 0.852793
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.852793,
+        "best_id": 4,
+        "best_iou": 0.852793
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.896807,
+        "best_id": 15,
+        "best_iou": 0.896807
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.866607,
+        "best_id": 9,
+        "best_iou": 0.866607
+      }
+    },
+    {
+      "frame": 92,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.458766
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.555179,
+        "best_id": 5,
+        "best_iou": 0.555179
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.017926
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.631097,
+        "best_id": 18,
+        "best_iou": 0.631097
+      }
+    },
+    {
+      "frame": 93,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.651217,
+        "best_id": 1,
+        "best_iou": 0.651217
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.651217,
+        "best_id": 1,
+        "best_iou": 0.651217
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.89224,
+        "best_id": 3,
+        "best_iou": 0.89224
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.88455,
+        "best_id": 3,
+        "best_iou": 0.88455
+      }
+    },
+    {
+      "frame": 93,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.800954,
+        "best_id": 4,
+        "best_iou": 0.800954
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.800954,
+        "best_id": 4,
+        "best_iou": 0.800954
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.89964,
+        "best_id": 15,
+        "best_iou": 0.89964
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.858917,
+        "best_id": 9,
+        "best_iou": 0.858917
+      }
+    },
+    {
+      "frame": 93,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.402952
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.504401,
+        "best_id": 5,
+        "best_iou": 0.504401
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.020935
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.683761,
+        "best_id": 18,
+        "best_iou": 0.683761
+      }
+    },
+    {
+      "frame": 94,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.651356,
+        "best_id": 1,
+        "best_iou": 0.651356
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.651356,
+        "best_id": 1,
+        "best_iou": 0.651356
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.892664,
+        "best_id": 3,
+        "best_iou": 0.892664
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.897843,
+        "best_id": 3,
+        "best_iou": 0.897843
+      }
+    },
+    {
+      "frame": 94,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.746763,
+        "best_id": 4,
+        "best_iou": 0.746763
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.746763,
+        "best_id": 4,
+        "best_iou": 0.746763
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.871121,
+        "best_id": 15,
+        "best_iou": 0.871121
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.824082,
+        "best_id": 9,
+        "best_iou": 0.824082
+      }
+    },
+    {
+      "frame": 94,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.408923
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.510654,
+        "best_id": 5,
+        "best_iou": 0.510654
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.690945,
+        "best_id": 32,
+        "best_iou": 0.690945
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.730971,
+        "best_id": 18,
+        "best_iou": 0.730971
+      }
+    },
+    {
+      "frame": 95,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.651495,
+        "best_id": 1,
+        "best_iou": 0.651495
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.651495,
+        "best_id": 1,
+        "best_iou": 0.651495
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.897302,
+        "best_id": 3,
+        "best_iou": 0.897302
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.902255,
+        "best_id": 3,
+        "best_iou": 0.902255
+      }
+    },
+    {
+      "frame": 95,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.74059,
+        "best_id": 4,
+        "best_iou": 0.74059
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.74059,
+        "best_id": 4,
+        "best_iou": 0.74059
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.829754,
+        "best_id": 15,
+        "best_iou": 0.829754
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.79826,
+        "best_id": 9,
+        "best_iou": 0.79826
+      }
+    },
+    {
+      "frame": 95,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.535614,
+        "best_id": 5,
+        "best_iou": 0.535614
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.535614,
+        "best_id": 5,
+        "best_iou": 0.535614
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.617762,
+        "best_id": 32,
+        "best_iou": 0.617762
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.654209,
+        "best_id": 18,
+        "best_iou": 0.654209
+      }
+    },
+    {
+      "frame": 96,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.651477,
+        "best_id": 1,
+        "best_iou": 0.651477
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.651477,
+        "best_id": 1,
+        "best_iou": 0.651477
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.905354,
+        "best_id": 3,
+        "best_iou": 0.905354
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.905201,
+        "best_id": 3,
+        "best_iou": 0.905201
+      }
+    },
+    {
+      "frame": 96,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.734076,
+        "best_id": 4,
+        "best_iou": 0.734076
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.734076,
+        "best_id": 4,
+        "best_iou": 0.734076
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.789056,
+        "best_id": 15,
+        "best_iou": 0.789056
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.766153,
+        "best_id": 9,
+        "best_iou": 0.766153
+      }
+    },
+    {
+      "frame": 96,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.534542,
+        "best_id": 5,
+        "best_iou": 0.534542
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.534542,
+        "best_id": 5,
+        "best_iou": 0.534542
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.582463,
+        "best_id": 32,
+        "best_iou": 0.582463
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.600709,
+        "best_id": 18,
+        "best_iou": 0.600709
+      }
+    },
+    {
+      "frame": 97,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.651459,
+        "best_id": 1,
+        "best_iou": 0.651459
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.651459,
+        "best_id": 1,
+        "best_iou": 0.651459
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.911274,
+        "best_id": 3,
+        "best_iou": 0.911274
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.910959,
+        "best_id": 3,
+        "best_iou": 0.910959
+      }
+    },
+    {
+      "frame": 97,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.795167,
+        "best_id": 4,
+        "best_iou": 0.795167
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.795167,
+        "best_id": 4,
+        "best_iou": 0.795167
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.821239,
+        "best_id": 15,
+        "best_iou": 0.821239
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.805579,
+        "best_id": 9,
+        "best_iou": 0.805579
+      }
+    },
+    {
+      "frame": 97,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.435384
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.538072,
+        "best_id": 5,
+        "best_iou": 0.538072
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.589246,
+        "best_id": 32,
+        "best_iou": 0.589246
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.649704,
+        "best_id": 18,
+        "best_iou": 0.649704
+      }
+    },
+    {
+      "frame": 98,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.651127,
+        "best_id": 1,
+        "best_iou": 0.651127
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.651127,
+        "best_id": 1,
+        "best_iou": 0.651127
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.898766,
+        "best_id": 3,
+        "best_iou": 0.898766
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.885482,
+        "best_id": 3,
+        "best_iou": 0.885482
+      }
+    },
+    {
+      "frame": 98,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.820562,
+        "best_id": 4,
+        "best_iou": 0.820562
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.820562,
+        "best_id": 4,
+        "best_iou": 0.820562
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.856965,
+        "best_id": 15,
+        "best_iou": 0.856965
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.837155,
+        "best_id": 9,
+        "best_iou": 0.837155
+      }
+    },
+    {
+      "frame": 98,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.474616
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.575214,
+        "best_id": 5,
+        "best_iou": 0.575214
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.609885,
+        "best_id": 32,
+        "best_iou": 0.609885
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.698328,
+        "best_id": 18,
+        "best_iou": 0.698328
+      }
+    },
+    {
+      "frame": 99,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650889,
+        "best_id": 1,
+        "best_iou": 0.650889
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650889,
+        "best_id": 1,
+        "best_iou": 0.650889
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.88486,
+        "best_id": 3,
+        "best_iou": 0.88486
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.882454,
+        "best_id": 3,
+        "best_iou": 0.882454
+      }
+    },
+    {
+      "frame": 99,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.858827,
+        "best_id": 4,
+        "best_iou": 0.858827
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.858827,
+        "best_id": 4,
+        "best_iou": 0.858827
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.832998,
+        "best_id": 15,
+        "best_iou": 0.832998
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.83503,
+        "best_id": 9,
+        "best_iou": 0.83503
+      }
+    },
+    {
+      "frame": 99,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.510858,
+        "best_id": 5,
+        "best_iou": 0.510858
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.510858,
+        "best_id": 5,
+        "best_iou": 0.510858
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.643672,
+        "best_id": 32,
+        "best_iou": 0.643672
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.745573,
+        "best_id": 18,
+        "best_iou": 0.745573
+      }
+    },
+    {
+      "frame": 100,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650845,
+        "best_id": 1,
+        "best_iou": 0.650845
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650845,
+        "best_id": 1,
+        "best_iou": 0.650845
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.893477,
+        "best_id": 3,
+        "best_iou": 0.893477
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.892081,
+        "best_id": 3,
+        "best_iou": 0.892081
+      }
+    },
+    {
+      "frame": 100,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.746045,
+        "best_id": 4,
+        "best_iou": 0.746045
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.746045,
+        "best_id": 4,
+        "best_iou": 0.746045
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.825735,
+        "best_id": 15,
+        "best_iou": 0.825735
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.823494,
+        "best_id": 9,
+        "best_iou": 0.823494
+      }
+    },
+    {
+      "frame": 100,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.535707,
+        "best_id": 5,
+        "best_iou": 0.535707
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.535707,
+        "best_id": 5,
+        "best_iou": 0.535707
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.638454,
+        "best_id": 32,
+        "best_iou": 0.638454
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.787042,
+        "best_id": 18,
+        "best_iou": 0.787042
+      }
+    },
+    {
+      "frame": 101,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.65067,
+        "best_id": 1,
+        "best_iou": 0.65067
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.65067,
+        "best_id": 1,
+        "best_iou": 0.65067
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.915409,
+        "best_id": 3,
+        "best_iou": 0.915409
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.914957,
+        "best_id": 3,
+        "best_iou": 0.914957
+      }
+    },
+    {
+      "frame": 101,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.759863,
+        "best_id": 4,
+        "best_iou": 0.759863
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.759863,
+        "best_id": 4,
+        "best_iou": 0.759863
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.810021,
+        "best_id": 15,
+        "best_iou": 0.810021
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.805805,
+        "best_id": 9,
+        "best_iou": 0.805805
+      }
+    },
+    {
+      "frame": 101,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.574265,
+        "best_id": 5,
+        "best_iou": 0.574265
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.574265,
+        "best_id": 5,
+        "best_iou": 0.574265
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.64634,
+        "best_id": 32,
+        "best_iou": 0.64634
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.802215,
+        "best_id": 18,
+        "best_iou": 0.802215
+      }
+    },
+    {
+      "frame": 101,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.050964
+      },
+      "me": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.050964
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.05398
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.053699
+      }
+    },
+    {
+      "frame": 102,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650274,
+        "best_id": 1,
+        "best_iou": 0.650274
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650274,
+        "best_id": 1,
+        "best_iou": 0.650274
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.915403,
+        "best_id": 3,
+        "best_iou": 0.915403
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.931942,
+        "best_id": 3,
+        "best_iou": 0.931942
+      }
+    },
+    {
+      "frame": 102,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.806623,
+        "best_id": 4,
+        "best_iou": 0.806623
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.806623,
+        "best_id": 4,
+        "best_iou": 0.806623
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.848721,
+        "best_id": 15,
+        "best_iou": 0.848721
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.836697,
+        "best_id": 9,
+        "best_iou": 0.836697
+      }
+    },
+    {
+      "frame": 102,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.592615,
+        "best_id": 5,
+        "best_iou": 0.592615
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.592615,
+        "best_id": 5,
+        "best_iou": 0.592615
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.653166,
+        "best_id": 32,
+        "best_iou": 0.653166
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.79038,
+        "best_id": 18,
+        "best_iou": 0.79038
+      }
+    },
+    {
+      "frame": 102,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.046827
+      },
+      "me": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.046827
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.048716
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.04803
+      }
+    },
+    {
+      "frame": 103,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.649986,
+        "best_id": 1,
+        "best_iou": 0.649986
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.649986,
+        "best_id": 1,
+        "best_iou": 0.649986
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.925837,
+        "best_id": 3,
+        "best_iou": 0.925837
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.927541,
+        "best_id": 3,
+        "best_iou": 0.927541
+      }
+    },
+    {
+      "frame": 103,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.854847,
+        "best_id": 4,
+        "best_iou": 0.854847
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.854847,
+        "best_id": 4,
+        "best_iou": 0.854847
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.894705,
+        "best_id": 15,
+        "best_iou": 0.894705
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.872535,
+        "best_id": 9,
+        "best_iou": 0.872535
+      }
+    },
+    {
+      "frame": 103,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.588476,
+        "best_id": 5,
+        "best_iou": 0.588476
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.588476,
+        "best_id": 5,
+        "best_iou": 0.588476
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.679624,
+        "best_id": 32,
+        "best_iou": 0.679624
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.78616,
+        "best_id": 18,
+        "best_iou": 0.78616
+      }
+    },
+    {
+      "frame": 103,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.041287
+      },
+      "me": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.041287
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.039344
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.038938
+      }
+    },
+    {
+      "frame": 104,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.650054,
+        "best_id": 1,
+        "best_iou": 0.650054
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.650054,
+        "best_id": 1,
+        "best_iou": 0.650054
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.911334,
+        "best_id": 3,
+        "best_iou": 0.911334
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.911869,
+        "best_id": 3,
+        "best_iou": 0.911869
+      }
+    },
+    {
+      "frame": 104,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.874414,
+        "best_id": 4,
+        "best_iou": 0.874414
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.874414,
+        "best_id": 4,
+        "best_iou": 0.874414
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.895993,
+        "best_id": 15,
+        "best_iou": 0.895993
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.885884,
+        "best_id": 9,
+        "best_iou": 0.885884
+      }
+    },
+    {
+      "frame": 104,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.561547,
+        "best_id": 5,
+        "best_iou": 0.561547
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.561547,
+        "best_id": 5,
+        "best_iou": 0.561547
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.691971,
+        "best_id": 32,
+        "best_iou": 0.691971
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.783653,
+        "best_id": 18,
+        "best_iou": 0.783653
+      }
+    },
+    {
+      "frame": 104,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.033554
+      },
+      "me": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.033554
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.039841
+      },
+      "reid": {
+        "matched_id": 24,
+        "matched_iou": 0.52201,
+        "best_id": 24,
+        "best_iou": 0.52201
+      }
+    },
+    {
+      "frame": 105,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.649634,
+        "best_id": 1,
+        "best_iou": 0.649634
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.649634,
+        "best_id": 1,
+        "best_iou": 0.649634
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.9147,
+        "best_id": 3,
+        "best_iou": 0.9147
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.909768,
+        "best_id": 3,
+        "best_iou": 0.909768
+      }
+    },
+    {
+      "frame": 105,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.767988,
+        "best_id": 4,
+        "best_iou": 0.767988
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.767988,
+        "best_id": 4,
+        "best_iou": 0.767988
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.913972,
+        "best_id": 15,
+        "best_iou": 0.913972
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.901524,
+        "best_id": 9,
+        "best_iou": 0.901524
+      }
+    },
+    {
+      "frame": 105,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.505213,
+        "best_id": 5,
+        "best_iou": 0.505213
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.505213,
+        "best_id": 5,
+        "best_iou": 0.505213
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.709181,
+        "best_id": 32,
+        "best_iou": 0.709181
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.794164,
+        "best_id": 18,
+        "best_iou": 0.794164
+      }
+    },
+    {
+      "frame": 105,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.042838
+      },
+      "me": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 4,
+        "best_iou": 0.042838
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.041623
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.039767
+      }
+    },
+    {
+      "frame": 106,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.64957,
+        "best_id": 1,
+        "best_iou": 0.64957
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.64957,
+        "best_id": 1,
+        "best_iou": 0.64957
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.920885,
+        "best_id": 3,
+        "best_iou": 0.920885
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.919895,
+        "best_id": 3,
+        "best_iou": 0.919895
+      }
+    },
+    {
+      "frame": 106,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.789992,
+        "best_id": 4,
+        "best_iou": 0.789992
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.789992,
+        "best_id": 4,
+        "best_iou": 0.789992
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.892928,
+        "best_id": 15,
+        "best_iou": 0.892928
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.872568,
+        "best_id": 9,
+        "best_iou": 0.872568
+      }
+    },
+    {
+      "frame": 106,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.487455
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.584262,
+        "best_id": 5,
+        "best_iou": 0.584262
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.714139,
+        "best_id": 32,
+        "best_iou": 0.714139
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.795943,
+        "best_id": 18,
+        "best_iou": 0.795943
+      }
+    },
+    {
+      "frame": 106,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.671103,
+        "best_id": 7,
+        "best_iou": 0.671103
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.671103,
+        "best_id": 7,
+        "best_iou": 0.671103
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.050224
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.049089
+      }
+    },
+    {
+      "frame": 106,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.551724,
+        "best_id": 6,
+        "best_iou": 0.551724
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.551724,
+        "best_id": 6,
+        "best_iou": 0.551724
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      }
+    },
+    {
+      "frame": 107,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.649344,
+        "best_id": 1,
+        "best_iou": 0.649344
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.649344,
+        "best_id": 1,
+        "best_iou": 0.649344
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.928198,
+        "best_id": 3,
+        "best_iou": 0.928198
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.928905,
+        "best_id": 3,
+        "best_iou": 0.928905
+      }
+    },
+    {
+      "frame": 107,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.80367,
+        "best_id": 4,
+        "best_iou": 0.80367
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.80367,
+        "best_id": 4,
+        "best_iou": 0.80367
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.876867,
+        "best_id": 15,
+        "best_iou": 0.876867
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.870045,
+        "best_id": 9,
+        "best_iou": 0.870045
+      }
+    },
+    {
+      "frame": 107,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.434691
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.537391,
+        "best_id": 5,
+        "best_iou": 0.537391
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.74891,
+        "best_id": 32,
+        "best_iou": 0.74891
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.795347,
+        "best_id": 18,
+        "best_iou": 0.795347
+      }
+    },
+    {
+      "frame": 107,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.703794,
+        "best_id": 7,
+        "best_iou": 0.703794
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.703794,
+        "best_id": 7,
+        "best_iou": 0.703794
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.05503
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 28,
+        "best_iou": 0.482266
+      }
+    },
+    {
+      "frame": 107,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.713766,
+        "best_id": 6,
+        "best_iou": 0.713766
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.713766,
+        "best_id": 6,
+        "best_iou": 0.713766
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      }
+    },
+    {
+      "frame": 108,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.649286,
+        "best_id": 1,
+        "best_iou": 0.649286
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.649286,
+        "best_id": 1,
+        "best_iou": 0.649286
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.934078,
+        "best_id": 3,
+        "best_iou": 0.934078
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.93557,
+        "best_id": 3,
+        "best_iou": 0.93557
+      }
+    },
+    {
+      "frame": 108,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.872626,
+        "best_id": 4,
+        "best_iou": 0.872626
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.872626,
+        "best_id": 4,
+        "best_iou": 0.872626
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.843881,
+        "best_id": 15,
+        "best_iou": 0.843881
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.852235,
+        "best_id": 9,
+        "best_iou": 0.852235
+      }
+    },
+    {
+      "frame": 108,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 5,
+        "best_iou": 0.470879
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.572098,
+        "best_id": 5,
+        "best_iou": 0.572098
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.777258,
+        "best_id": 32,
+        "best_iou": 0.777258
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.814889,
+        "best_id": 18,
+        "best_iou": 0.814889
+      }
+    },
+    {
+      "frame": 108,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.641725,
+        "best_id": 7,
+        "best_iou": 0.641725
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.641725,
+        "best_id": 7,
+        "best_iou": 0.641725
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.058813
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.05939
+      }
+    },
+    {
+      "frame": 108,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.722475,
+        "best_id": 6,
+        "best_iou": 0.722475
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.722475,
+        "best_id": 6,
+        "best_iou": 0.722475
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 29,
+        "best_iou": 0.497316
+      }
+    },
+    {
+      "frame": 109,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.64884,
+        "best_id": 1,
+        "best_iou": 0.64884
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.64884,
+        "best_id": 1,
+        "best_iou": 0.64884
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.93896,
+        "best_id": 3,
+        "best_iou": 0.93896
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.941069,
+        "best_id": 3,
+        "best_iou": 0.941069
+      }
+    },
+    {
+      "frame": 109,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.867025,
+        "best_id": 4,
+        "best_iou": 0.867025
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.867025,
+        "best_id": 4,
+        "best_iou": 0.867025
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.860262,
+        "best_id": 15,
+        "best_iou": 0.860262
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.860536,
+        "best_id": 9,
+        "best_iou": 0.860536
+      }
+    },
+    {
+      "frame": 109,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.520852,
+        "best_id": 5,
+        "best_iou": 0.520852
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.520852,
+        "best_id": 5,
+        "best_iou": 0.520852
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.795638,
+        "best_id": 32,
+        "best_iou": 0.795638
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.821301,
+        "best_id": 18,
+        "best_iou": 0.821301
+      }
+    },
+    {
+      "frame": 109,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.574068,
+        "best_id": 7,
+        "best_iou": 0.574068
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.574068,
+        "best_id": 7,
+        "best_iou": 0.574068
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 15,
+        "best_iou": 0.058931
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 9,
+        "best_iou": 0.059034
+      }
+    },
+    {
+      "frame": 109,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.726545,
+        "best_id": 6,
+        "best_iou": 0.726545
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.726545,
+        "best_id": 6,
+        "best_iou": 0.726545
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.532083,
+        "best_id": 29,
+        "best_iou": 0.532083
+      }
+    },
+    {
+      "frame": 110,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.648838,
+        "best_id": 1,
+        "best_iou": 0.648838
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.648838,
+        "best_id": 1,
+        "best_iou": 0.648838
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.958006,
+        "best_id": 3,
+        "best_iou": 0.958006
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.961457,
+        "best_id": 3,
+        "best_iou": 0.961457
+      }
+    },
+    {
+      "frame": 110,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.907625,
+        "best_id": 4,
+        "best_iou": 0.907625
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.907625,
+        "best_id": 4,
+        "best_iou": 0.907625
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.863193,
+        "best_id": 15,
+        "best_iou": 0.863193
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.858035,
+        "best_id": 9,
+        "best_iou": 0.858035
+      }
+    },
+    {
+      "frame": 110,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.585785,
+        "best_id": 5,
+        "best_iou": 0.585785
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.585785,
+        "best_id": 5,
+        "best_iou": 0.585785
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.799283,
+        "best_id": 32,
+        "best_iou": 0.799283
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.841117,
+        "best_id": 18,
+        "best_iou": 0.841117
+      }
+    },
+    {
+      "frame": 110,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.725191,
+        "best_id": 7,
+        "best_iou": 0.725191
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.725191,
+        "best_id": 7,
+        "best_iou": 0.725191
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 47,
+        "best_iou": 0.401814
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 31,
+        "best_iou": 0.39508
+      }
+    },
+    {
+      "frame": 110,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.769452,
+        "best_id": 6,
+        "best_iou": 0.769452
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.769452,
+        "best_id": 6,
+        "best_iou": 0.769452
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.575892,
+        "best_id": 29,
+        "best_iou": 0.575892
+      }
+    },
+    {
+      "frame": 111,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.648486,
+        "best_id": 1,
+        "best_iou": 0.648486
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.648486,
+        "best_id": 1,
+        "best_iou": 0.648486
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.95562,
+        "best_id": 3,
+        "best_iou": 0.95562
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.951345,
+        "best_id": 3,
+        "best_iou": 0.951345
+      }
+    },
+    {
+      "frame": 111,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.909878,
+        "best_id": 4,
+        "best_iou": 0.909878
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.909878,
+        "best_id": 4,
+        "best_iou": 0.909878
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.927319,
+        "best_id": 15,
+        "best_iou": 0.927319
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.877374,
+        "best_id": 9,
+        "best_iou": 0.877374
+      }
+    },
+    {
+      "frame": 111,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.653211,
+        "best_id": 5,
+        "best_iou": 0.653211
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.653211,
+        "best_id": 5,
+        "best_iou": 0.653211
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.74731,
+        "best_id": 32,
+        "best_iou": 0.74731
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.80996,
+        "best_id": 18,
+        "best_iou": 0.80996
+      }
+    },
+    {
+      "frame": 111,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.801404,
+        "best_id": 7,
+        "best_iou": 0.801404
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.801404,
+        "best_id": 7,
+        "best_iou": 0.801404
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 47,
+        "best_iou": 0.433094
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 31,
+        "best_iou": 0.42653
+      }
+    },
+    {
+      "frame": 111,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.727002,
+        "best_id": 6,
+        "best_iou": 0.727002
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.727002,
+        "best_id": 6,
+        "best_iou": 0.727002
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.734667,
+        "best_id": 29,
+        "best_iou": 0.734667
+      }
+    },
+    {
+      "frame": 112,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.648579,
+        "best_id": 1,
+        "best_iou": 0.648579
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.648579,
+        "best_id": 1,
+        "best_iou": 0.648579
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.947006,
+        "best_id": 3,
+        "best_iou": 0.947006
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.947061,
+        "best_id": 3,
+        "best_iou": 0.947061
+      }
+    },
+    {
+      "frame": 112,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.884469,
+        "best_id": 4,
+        "best_iou": 0.884469
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.884469,
+        "best_id": 4,
+        "best_iou": 0.884469
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.941438,
+        "best_id": 15,
+        "best_iou": 0.941438
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.882838,
+        "best_id": 9,
+        "best_iou": 0.882838
+      }
+    },
+    {
+      "frame": 112,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.628096,
+        "best_id": 5,
+        "best_iou": 0.628096
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.628096,
+        "best_id": 5,
+        "best_iou": 0.628096
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.75226,
+        "best_id": 32,
+        "best_iou": 0.75226
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.808511,
+        "best_id": 18,
+        "best_iou": 0.808511
+      }
+    },
+    {
+      "frame": 112,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.817831,
+        "best_id": 7,
+        "best_iou": 0.817831
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.817831,
+        "best_id": 7,
+        "best_iou": 0.817831
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 47,
+        "best_iou": 0.478136
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 31,
+        "best_iou": 0.46385
+      }
+    },
+    {
+      "frame": 112,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.727697,
+        "best_id": 6,
+        "best_iou": 0.727697
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.727697,
+        "best_id": 6,
+        "best_iou": 0.727697
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.822173,
+        "best_id": 52,
+        "best_iou": 0.822173
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.840321,
+        "best_id": 29,
+        "best_iou": 0.840321
+      }
+    },
+    {
+      "frame": 113,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.648194,
+        "best_id": 1,
+        "best_iou": 0.648194
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.648194,
+        "best_id": 1,
+        "best_iou": 0.648194
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.95153,
+        "best_id": 3,
+        "best_iou": 0.95153
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.951647,
+        "best_id": 3,
+        "best_iou": 0.951647
+      }
+    },
+    {
+      "frame": 113,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.892237,
+        "best_id": 4,
+        "best_iou": 0.892237
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.892237,
+        "best_id": 4,
+        "best_iou": 0.892237
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.924221,
+        "best_id": 15,
+        "best_iou": 0.924221
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.884596,
+        "best_id": 9,
+        "best_iou": 0.884596
+      }
+    },
+    {
+      "frame": 113,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.602272,
+        "best_id": 5,
+        "best_iou": 0.602272
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.602272,
+        "best_id": 5,
+        "best_iou": 0.602272
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.745665,
+        "best_id": 32,
+        "best_iou": 0.745665
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.806856,
+        "best_id": 18,
+        "best_iou": 0.806856
+      }
+    },
+    {
+      "frame": 113,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.844978,
+        "best_id": 7,
+        "best_iou": 0.844978
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.844978,
+        "best_id": 7,
+        "best_iou": 0.844978
+      },
+      "bt": {
+        "matched_id": 47,
+        "matched_iou": 0.568702,
+        "best_id": 47,
+        "best_iou": 0.568702
+      },
+      "reid": {
+        "matched_id": 31,
+        "matched_iou": 0.566097,
+        "best_id": 31,
+        "best_iou": 0.566097
+      }
+    },
+    {
+      "frame": 113,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.724186,
+        "best_id": 6,
+        "best_iou": 0.724186
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.724186,
+        "best_id": 6,
+        "best_iou": 0.724186
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.729891,
+        "best_id": 52,
+        "best_iou": 0.729891
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.850507,
+        "best_id": 29,
+        "best_iou": 0.850507
+      }
+    },
+    {
+      "frame": 137,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.643741,
+        "best_id": 1,
+        "best_iou": 0.643741
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.643741,
+        "best_id": 1,
+        "best_iou": 0.643741
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.875352,
+        "best_id": 3,
+        "best_iou": 0.875352
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.850589,
+        "best_id": 3,
+        "best_iou": 0.850589
+      }
+    },
+    {
+      "frame": 137,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.912444,
+        "best_id": 4,
+        "best_iou": 0.912444
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.912444,
+        "best_id": 4,
+        "best_iou": 0.912444
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.868812,
+        "best_id": 15,
+        "best_iou": 0.868812
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.92627,
+        "best_id": 9,
+        "best_iou": 0.92627
+      }
+    },
+    {
+      "frame": 137,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.76457,
+        "best_id": 5,
+        "best_iou": 0.76457
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.76457,
+        "best_id": 5,
+        "best_iou": 0.76457
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.688025,
+        "best_id": 32,
+        "best_iou": 0.688025
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.903469,
+        "best_id": 18,
+        "best_iou": 0.903469
+      }
+    },
+    {
+      "frame": 137,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.855269,
+        "best_id": 7,
+        "best_iou": 0.855269
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.855269,
+        "best_id": 7,
+        "best_iou": 0.855269
+      },
+      "bt": {
+        "matched_id": 47,
+        "matched_iou": 0.849039,
+        "best_id": 47,
+        "best_iou": 0.849039
+      },
+      "reid": {
+        "matched_id": 31,
+        "matched_iou": 0.921473,
+        "best_id": 31,
+        "best_iou": 0.921473
+      }
+    },
+    {
+      "frame": 137,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.875819,
+        "best_id": 6,
+        "best_iou": 0.875819
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.875819,
+        "best_id": 6,
+        "best_iou": 0.875819
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.881985,
+        "best_id": 52,
+        "best_iou": 0.881985
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.927313,
+        "best_id": 29,
+        "best_iou": 0.927313
+      }
+    },
+    {
+      "frame": 137,
+      "gold_track": 8,
+      "pre": {
+        "matched_id": 8,
+        "matched_iou": 0.644255,
+        "best_id": 8,
+        "best_iou": 0.644255
+      },
+      "me": {
+        "matched_id": 8,
+        "matched_iou": 0.644255,
+        "best_id": 8,
+        "best_iou": 0.644255
+      },
+      "bt": {
+        "matched_id": 54,
+        "matched_iou": 0.635504,
+        "best_id": 54,
+        "best_iou": 0.635504
+      },
+      "reid": {
+        "matched_id": 34,
+        "matched_iou": 0.785225,
+        "best_id": 34,
+        "best_iou": 0.785225
+      }
+    },
+    {
+      "frame": 138,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.643455,
+        "best_id": 1,
+        "best_iou": 0.643455
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.643455,
+        "best_id": 1,
+        "best_iou": 0.643455
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.508157,
+        "best_id": 3,
+        "best_iou": 0.508157
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.578835,
+        "best_id": 3,
+        "best_iou": 0.578835
+      }
+    },
+    {
+      "frame": 138,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.874372,
+        "best_id": 4,
+        "best_iou": 0.874372
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.874372,
+        "best_id": 4,
+        "best_iou": 0.874372
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.875549,
+        "best_id": 15,
+        "best_iou": 0.875549
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.946259,
+        "best_id": 9,
+        "best_iou": 0.946259
+      }
+    },
+    {
+      "frame": 138,
+      "gold_track": 5,
+      "pre": {
+        "matched_id": 5,
+        "matched_iou": 0.61709,
+        "best_id": 5,
+        "best_iou": 0.61709
+      },
+      "me": {
+        "matched_id": 5,
+        "matched_iou": 0.61709,
+        "best_id": 5,
+        "best_iou": 0.61709
+      },
+      "bt": {
+        "matched_id": 32,
+        "matched_iou": 0.58882,
+        "best_id": 32,
+        "best_iou": 0.58882
+      },
+      "reid": {
+        "matched_id": 18,
+        "matched_iou": 0.850341,
+        "best_id": 18,
+        "best_iou": 0.850341
+      }
+    },
+    {
+      "frame": 138,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.854645,
+        "best_id": 7,
+        "best_iou": 0.854645
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.854645,
+        "best_id": 7,
+        "best_iou": 0.854645
+      },
+      "bt": {
+        "matched_id": 47,
+        "matched_iou": 0.809887,
+        "best_id": 47,
+        "best_iou": 0.809887
+      },
+      "reid": {
+        "matched_id": 31,
+        "matched_iou": 0.885264,
+        "best_id": 31,
+        "best_iou": 0.885264
+      }
+    },
+    {
+      "frame": 138,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.881483,
+        "best_id": 6,
+        "best_iou": 0.881483
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.881483,
+        "best_id": 6,
+        "best_iou": 0.881483
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.900885,
+        "best_id": 52,
+        "best_iou": 0.900885
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.920516,
+        "best_id": 29,
+        "best_iou": 0.920516
+      }
+    },
+    {
+      "frame": 138,
+      "gold_track": 8,
+      "pre": {
+        "matched_id": 8,
+        "matched_iou": 0.612465,
+        "best_id": 8,
+        "best_iou": 0.612465
+      },
+      "me": {
+        "matched_id": 8,
+        "matched_iou": 0.612465,
+        "best_id": 8,
+        "best_iou": 0.612465
+      },
+      "bt": {
+        "matched_id": 54,
+        "matched_iou": 0.609958,
+        "best_id": 54,
+        "best_iou": 0.609958
+      },
+      "reid": {
+        "matched_id": 34,
+        "matched_iou": 0.833719,
+        "best_id": 34,
+        "best_iou": 0.833719
+      }
+    },
+    {
+      "frame": 139,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.643289,
+        "best_id": 1,
+        "best_iou": 0.643289
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.643289,
+        "best_id": 1,
+        "best_iou": 0.643289
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.353507
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.464741
+      }
+    },
+    {
+      "frame": 139,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.856747,
+        "best_id": 4,
+        "best_iou": 0.856747
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.856747,
+        "best_id": 4,
+        "best_iou": 0.856747
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.86525,
+        "best_id": 15,
+        "best_iou": 0.86525
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.947394,
+        "best_id": 9,
+        "best_iou": 0.947394
+      }
+    },
+    {
+      "frame": 139,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.875023,
+        "best_id": 7,
+        "best_iou": 0.875023
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.875023,
+        "best_id": 7,
+        "best_iou": 0.875023
+      },
+      "bt": {
+        "matched_id": 47,
+        "matched_iou": 0.789053,
+        "best_id": 47,
+        "best_iou": 0.789053
+      },
+      "reid": {
+        "matched_id": 31,
+        "matched_iou": 0.867857,
+        "best_id": 31,
+        "best_iou": 0.867857
+      }
+    },
+    {
+      "frame": 139,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.88073,
+        "best_id": 6,
+        "best_iou": 0.88073
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.88073,
+        "best_id": 6,
+        "best_iou": 0.88073
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.926339,
+        "best_id": 52,
+        "best_iou": 0.926339
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.932032,
+        "best_id": 29,
+        "best_iou": 0.932032
+      }
+    },
+    {
+      "frame": 139,
+      "gold_track": 8,
+      "pre": {
+        "matched_id": 8,
+        "matched_iou": 0.743041,
+        "best_id": 8,
+        "best_iou": 0.743041
+      },
+      "me": {
+        "matched_id": 8,
+        "matched_iou": 0.743041,
+        "best_id": 8,
+        "best_iou": 0.743041
+      },
+      "bt": {
+        "matched_id": 54,
+        "matched_iou": 0.558089,
+        "best_id": 54,
+        "best_iou": 0.558089
+      },
+      "reid": {
+        "matched_id": 34,
+        "matched_iou": 0.878754,
+        "best_id": 34,
+        "best_iou": 0.878754
+      }
+    },
+    {
+      "frame": 140,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.643046,
+        "best_id": 1,
+        "best_iou": 0.643046
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.643046,
+        "best_id": 1,
+        "best_iou": 0.643046
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.450016
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.545992,
+        "best_id": 3,
+        "best_iou": 0.545992
+      }
+    },
+    {
+      "frame": 140,
+      "gold_track": 4,
+      "pre": {
+        "matched_id": 4,
+        "matched_iou": 0.870735,
+        "best_id": 4,
+        "best_iou": 0.870735
+      },
+      "me": {
+        "matched_id": 4,
+        "matched_iou": 0.870735,
+        "best_id": 4,
+        "best_iou": 0.870735
+      },
+      "bt": {
+        "matched_id": 15,
+        "matched_iou": 0.860764,
+        "best_id": 15,
+        "best_iou": 0.860764
+      },
+      "reid": {
+        "matched_id": 9,
+        "matched_iou": 0.962373,
+        "best_id": 9,
+        "best_iou": 0.962373
+      }
+    },
+    {
+      "frame": 140,
+      "gold_track": 6,
+      "pre": {
+        "matched_id": 7,
+        "matched_iou": 0.787233,
+        "best_id": 7,
+        "best_iou": 0.787233
+      },
+      "me": {
+        "matched_id": 7,
+        "matched_iou": 0.787233,
+        "best_id": 7,
+        "best_iou": 0.787233
+      },
+      "bt": {
+        "matched_id": 47,
+        "matched_iou": 0.78653,
+        "best_id": 47,
+        "best_iou": 0.78653
+      },
+      "reid": {
+        "matched_id": 31,
+        "matched_iou": 0.860413,
+        "best_id": 31,
+        "best_iou": 0.860413
+      }
+    },
+    {
+      "frame": 140,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.873444,
+        "best_id": 6,
+        "best_iou": 0.873444
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.873444,
+        "best_id": 6,
+        "best_iou": 0.873444
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.943532,
+        "best_id": 52,
+        "best_iou": 0.943532
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.941142,
+        "best_id": 29,
+        "best_iou": 0.941142
+      }
+    },
+    {
+      "frame": 140,
+      "gold_track": 8,
+      "pre": {
+        "matched_id": 8,
+        "matched_iou": 0.768065,
+        "best_id": 8,
+        "best_iou": 0.768065
+      },
+      "me": {
+        "matched_id": 8,
+        "matched_iou": 0.768065,
+        "best_id": 8,
+        "best_iou": 0.768065
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 54,
+        "best_iou": 0.499804
+      },
+      "reid": {
+        "matched_id": 34,
+        "matched_iou": 0.868725,
+        "best_id": 34,
+        "best_iou": 0.868725
+      }
+    },
+    {
+      "frame": 167,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.639063,
+        "best_id": 1,
+        "best_iou": 0.639063
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.639063,
+        "best_id": 1,
+        "best_iou": 0.639063
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.83657,
+        "best_id": 3,
+        "best_iou": 0.83657
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.836641,
+        "best_id": 3,
+        "best_iou": 0.836641
+      }
+    },
+    {
+      "frame": 167,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.862515,
+        "best_id": 6,
+        "best_iou": 0.862515
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.862515,
+        "best_id": 6,
+        "best_iou": 0.862515
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.925073,
+        "best_id": 52,
+        "best_iou": 0.925073
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.93023,
+        "best_id": 29,
+        "best_iou": 0.93023
+      }
+    },
+    {
+      "frame": 167,
+      "gold_track": 8,
+      "pre": {
+        "matched_id": 8,
+        "matched_iou": 0.585356,
+        "best_id": 8,
+        "best_iou": 0.585356
+      },
+      "me": {
+        "matched_id": 8,
+        "matched_iou": 0.585356,
+        "best_id": 8,
+        "best_iou": 0.585356
+      },
+      "bt": {
+        "matched_id": 54,
+        "matched_iou": 0.533751,
+        "best_id": 54,
+        "best_iou": 0.533751
+      },
+      "reid": {
+        "matched_id": 34,
+        "matched_iou": 0.773437,
+        "best_id": 34,
+        "best_iou": 0.773437
+      }
+    },
+    {
+      "frame": 168,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.638928,
+        "best_id": 1,
+        "best_iou": 0.638928
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.638928,
+        "best_id": 1,
+        "best_iou": 0.638928
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.839884,
+        "best_id": 3,
+        "best_iou": 0.839884
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.838083,
+        "best_id": 3,
+        "best_iou": 0.838083
+      }
+    },
+    {
+      "frame": 168,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.925203,
+        "best_id": 6,
+        "best_iou": 0.925203
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.925203,
+        "best_id": 6,
+        "best_iou": 0.925203
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.930829,
+        "best_id": 52,
+        "best_iou": 0.930829
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.91533,
+        "best_id": 39,
+        "best_iou": 0.924006
+      }
+    },
+    {
+      "frame": 168,
+      "gold_track": 8,
+      "pre": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 8,
+        "best_iou": 0.493342
+      },
+      "me": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 8,
+        "best_iou": 0.493342
+      },
+      "bt": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      },
+      "reid": {
+        "matched_id": 34,
+        "matched_iou": 0.676476,
+        "best_id": 34,
+        "best_iou": 0.676476
+      }
+    },
+    {
+      "frame": 169,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.638792,
+        "best_id": 1,
+        "best_iou": 0.638792
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.638792,
+        "best_id": 1,
+        "best_iou": 0.638792
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.82903,
+        "best_id": 3,
+        "best_iou": 0.82903
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.829095,
+        "best_id": 3,
+        "best_iou": 0.829095
+      }
+    },
+    {
+      "frame": 169,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.892146,
+        "best_id": 6,
+        "best_iou": 0.892146
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.892146,
+        "best_id": 6,
+        "best_iou": 0.892146
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.90726,
+        "best_id": 71,
+        "best_iou": 0.922987
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.925307,
+        "best_id": 29,
+        "best_iou": 0.925307
+      }
+    },
+    {
+      "frame": 170,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.638589,
+        "best_id": 1,
+        "best_iou": 0.638589
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.638589,
+        "best_id": 1,
+        "best_iou": 0.638589
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.830641,
+        "best_id": 3,
+        "best_iou": 0.830641
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.830628,
+        "best_id": 3,
+        "best_iou": 0.830628
+      }
+    },
+    {
+      "frame": 170,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.860576,
+        "best_id": 6,
+        "best_iou": 0.860576
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.860576,
+        "best_id": 6,
+        "best_iou": 0.860576
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.883526,
+        "best_id": 52,
+        "best_iou": 0.883526
+      },
+      "reid": {
+        "matched_id": null,
+        "matched_iou": null,
+        "best_id": 3,
+        "best_iou": 0.0
+      }
+    },
+    {
+      "frame": 171,
+      "gold_track": 1,
+      "pre": {
+        "matched_id": 1,
+        "matched_iou": 0.638454,
+        "best_id": 1,
+        "best_iou": 0.638454
+      },
+      "me": {
+        "matched_id": 1,
+        "matched_iou": 0.638454,
+        "best_id": 1,
+        "best_iou": 0.638454
+      },
+      "bt": {
+        "matched_id": 3,
+        "matched_iou": 0.84063,
+        "best_id": 3,
+        "best_iou": 0.84063
+      },
+      "reid": {
+        "matched_id": 3,
+        "matched_iou": 0.840714,
+        "best_id": 3,
+        "best_iou": 0.840714
+      }
+    },
+    {
+      "frame": 171,
+      "gold_track": 7,
+      "pre": {
+        "matched_id": 6,
+        "matched_iou": 0.868301,
+        "best_id": 6,
+        "best_iou": 0.868301
+      },
+      "me": {
+        "matched_id": 6,
+        "matched_iou": 0.868301,
+        "best_id": 6,
+        "best_iou": 0.868301
+      },
+      "bt": {
+        "matched_id": 52,
+        "matched_iou": 0.901317,
+        "best_id": 52,
+        "best_iou": 0.901317
+      },
+      "reid": {
+        "matched_id": 29,
+        "matched_iou": 0.920977,
+        "best_id": 29,
+        "best_iou": 0.920977
+      }
+    }
+  ]
+}
